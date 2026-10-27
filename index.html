@@ -3,15 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <title>Simple Sample · Sampler online gratis estilo MPC</title>
+    <meta
+      name="description"
+      content="Sampler web gratis estilo MPC: importa un MP3, córtalo en slices y tócalos en 16 pads con el teclado, la pantalla táctil o MIDI. Sin registro y funciona offline."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Harol Restrepo" />
+    <meta name="application-name" content="Simple Sample" />
+    <meta name="color-scheme" content="dark" />
     <meta name="theme-color" content="#0b0b10" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Simple Sample" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="canonical" href="%SITE_URL%" />
     <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
-    <title>Simple Sample</title>
+    <link rel="icon" href="./icons/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./social/apple-touch-icon.png" />
+
+    <!-- Open Graph: Facebook, Instagram, LinkedIn, WhatsApp, Telegram, Slack, Discord -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Simple Sample" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:url" content="%SITE_URL%" />
+    <meta property="og:title" content="Simple Sample · Sampler online gratis estilo MPC" />
+    <meta
+      property="og:description"
+      content="Corta canciones y tócalas en pads desde el navegador, el móvil o un controlador MIDI. Gratis, sin registro y offline."
+    />
+    <meta property="og:image" content="%SITE_URL%social/og-image.png" />
+    <meta property="og:image:secure_url" content="%SITE_URL%social/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Simple Sample: forma de onda con un slice seleccionado junto a una cuadrícula de 16 pads" />
+    <meta property="og:image" content="%SITE_URL%social/og-square.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="Simple Sample: sampler web estilo MPC" />
+
+    <!-- X / Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Simple Sample · Sampler online gratis estilo MPC" />
+    <meta name="twitter:description" content="Corta canciones y tócalas en pads desde el navegador, el móvil o MIDI. Gratis y offline." />
+    <meta name="twitter:image" content="%SITE_URL%social/og-image.png" />
+    <meta name="twitter:image:alt" content="Simple Sample: forma de onda con un slice seleccionado junto a una cuadrícula de 16 pads" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Simple Sample",
+        "alternateName": "Simple Sample — Sampler",
+        "url": "%SITE_URL%",
+        "description": "Sampler web gratis estilo MPC: importa un MP3, córtalo en slices y tócalos en 16 pads con el teclado, la pantalla táctil o un controlador MIDI.",
+        "inLanguage": "es",
+        "applicationCategory": "MultimediaApplication",
+        "applicationSubCategory": "Music production",
+        "operatingSystem": "Any (navegador web)",
+        "browserRequirements": "Requiere un navegador moderno con Web Audio API",
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "image": "%SITE_URL%social/og-image.png",
+        "screenshot": "%SITE_URL%social/og-square.png",
+        "featureList": [
+          "Importa MP3, WAV, OGG y M4A",
+          "Corta, recorta y elimina trozos de la canción",
+          "Auto-chop en 4, 8 o 16 slices y detección de golpes",
+          "16 pads por banco con modos one-shot, gate y loop",
+          "Control por teclado, pantalla táctil y MIDI",
+          "Funciona offline como PWA; el audio nunca sale del dispositivo"
+        ],
+        "author": { "@type": "Person", "name": "Harol Restrepo", "url": "https://github.com/hstev" },
+        "codeRepository": "https://github.com/hstev/simple-sample",
+        "license": "https://opensource.org/licenses/MIT"
+      }
+    </script>
   </head>
   <body>
     <div id="app"></div>
+    <noscript>
+      <h1>Simple Sample — sampler online gratis estilo MPC</h1>
+      <p>
+        Importa un MP3, córtalo en slices y tócalos en 16 pads con el teclado, la pantalla táctil o un controlador MIDI.
+        Todo el audio se procesa en tu dispositivo, sin registro y también sin conexión.
+      </p>
+      <p>Activa JavaScript para usar la aplicación.</p>
+    </noscript>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

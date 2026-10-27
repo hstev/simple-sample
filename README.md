@@ -115,6 +115,15 @@ pull request y publica en GitHub Pages en cada push a `main` (Node 24; las actio
 Para activarlo la primera vez: en el repositorio, **Settings → Pages → Source: GitHub Actions**.
 La ruta base (`/simple-sample/`) se toma del nombre del repositorio automáticamente.
 
+### SEO y vista previa en redes
+
+- `index.html` incluye título, descripción, canonical, Open Graph, tarjeta de X y datos estructurados
+  (`WebApplication`). Las URLs absolutas salen de `SITE_URL` (por defecto `https://hstev.github.io/simple-sample/`);
+  cámbiala al compilar si publicas en otro dominio: `SITE_URL=https://midominio.com/ npm run build`.
+- El build genera `robots.txt` y `sitemap.xml` con esa misma URL.
+- Las imágenes para redes y anuncios están en `public/social/` (1200×630, 1200×1200 y 1080×1920).
+  Se regeneran con `npm run social-images` (usa `OG_FONT_DIR=<carpeta con los .ttf de Inter>` para la tipografía correcta).
+
 ## Contribuir
 
 ¡Las contribuciones son bienvenidas! Lee la [guía de contribución](CONTRIBUTING.md) para preparar el entorno,
